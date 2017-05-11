@@ -17,6 +17,7 @@ body{
     width: 100%;
     color: white;
     background: #2C3E50;
+    z-index: 1;
 }
 .bar-top{
     top: 0px;
@@ -77,4 +78,19 @@ body{
 .bar nav ul li a:hover{ 
     background: #3a4c5f;
     transform: scale(1.1);
+}
+
+
+section {
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #cecece;
+    z-index: 0;
+    padding-top: 80px;
+    display: table;
+    text-align: center;
+    min-height: 500px;
+
+    
 }
