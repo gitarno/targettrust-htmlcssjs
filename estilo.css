@@ -91,6 +91,10 @@ section {
     display: table;
     text-align: center;
     min-height: 500px;
+}
 
-    
+section#start{
+    background: url("turma-do-barulho.jpeg");
+    background-size: cover; 
+    background-position: center;
 }
