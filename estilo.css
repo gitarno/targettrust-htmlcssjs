@@ -50,16 +50,18 @@ body{
     margin: 0px;
     padding: 0px;
     text-align:right;
+    float: right;
 }
 
 .bar nav ul li{ 
     list-style: none;
     display: inline;
+    float: left;
 }
 
 .bar nav ul li a{ 
-    
     position: relative;
+    float: right;
     text-decoration: none;
     background: transparent;
     padding: 15px;
@@ -68,10 +70,11 @@ body{
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
-    
+    transform: scale(1);
+    border-radius: 3px;
 }
 
 .bar nav ul li a:hover{ 
     background: #3a4c5f;
-    
+    transform: scale(1.1);
 }
