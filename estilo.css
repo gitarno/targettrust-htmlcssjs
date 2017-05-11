@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+s@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 *{
     box-sizing: border-box;
@@ -53,15 +53,17 @@ body{
 }
 
 .bar nav ul li{ 
-   list-style: none;
-   display: inline;
+    list-style: none;
+    display: inline;
 }
 
 .bar nav ul li a{ 
-   text-decoration: none;
-   background: transparent;
+    text-decoration: none;
+    background: transparent;
+    padding: 15px;
+    color: white;
 }
 
 .bar nav ul li a:hover{ 
-   background: #3a4c5f;
+    background: #3a4c5f;
 }
