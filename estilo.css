@@ -62,6 +62,7 @@ body{
     background: transparent;
     padding: 15px;
     color: white;
+    transition: all ease 0.3s;
 }
 
 .bar nav ul li a:hover{ 
