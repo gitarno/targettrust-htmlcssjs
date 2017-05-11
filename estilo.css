@@ -32,13 +32,15 @@ body{
     height: 80px;
     max-height: 80px;
     padding: 15px;
+    text-transform: uppercase;
 }
 
 .bar nav{
     display: table-cell;
     vertical-align: middle;
-    width: 100$;
+    width: auto;
     padding: 15px;
+    text-transform: uppercase;
 }
 
 .bar nav ul{
@@ -50,4 +52,9 @@ body{
 .bar nav ul li{ 
    list-style: none;
    display: inline;
+}
+
+.bar nav ul li a{ 
+   text-decoration: none;
+   
 }
