@@ -98,3 +98,11 @@ section#start{
     background-size: cover; 
     background-position: center;
 }
+
+section#start h1{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 3em;
+}
+
