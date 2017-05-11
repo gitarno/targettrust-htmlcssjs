@@ -23,3 +23,13 @@ body{
 .bar-bottom{
     bottom: 0px;
 }
+
+.bar h1{
+    margin: 0px;
+    padding: 0px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 80px;
+    max-height: 80px;
+    padding: 15px;
+}
