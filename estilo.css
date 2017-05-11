@@ -33,3 +33,14 @@ body{
     max-height: 80px;
     padding: 15px;
 }
+
+.bar nav{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100$;
+}
+
+.bar nav ul{
+    margin: 0px;
+    padding: 0px;
+}
