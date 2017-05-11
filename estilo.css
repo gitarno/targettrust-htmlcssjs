@@ -38,9 +38,16 @@ body{
     display: table-cell;
     vertical-align: middle;
     width: 100$;
+    padding: 15px;
 }
 
 .bar nav ul{
     margin: 0px;
     padding: 0px;
+    text-align:right;
+}
+
+.bar nav ul li{ 
+   list-style: none;
+   display: inline;
 }
