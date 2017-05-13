@@ -10,13 +10,26 @@ function multiplicar(numeroA, numeroB) {
     return numeroA * numeroB;
 }
 function dividir(numeroA, numeroB) {
+    if(numeroA == 0 || numeroB == 0){
+        return "Ops, ZERO ??";
+    }
     return numeroA / numeroB;
+}
+
+function validarCampoNaN($campo){
+    if(isNaN($campo.value)){
+        $campo.value = "";
+        $campo.placeholder = "Digite um numero";
+        return 0;
+    }else{
+        return Number(campoB.value)
+    };
 }
 
 function ativarBotao($botao,$metodo) {
     $botao.addEventListener("click", function () {
-        var numeroA = Number(campoA.value),
-            numeroB = Number(campoB.value);
+        var numeroA = validarCampoNaN(campoA),
+            numeroB = validarCampoNaN(campoB);
 
         document.getElementById("resultado").innerHTML = $metodo(numeroA, numeroB); 
     });
