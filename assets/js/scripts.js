@@ -24,7 +24,23 @@ habilitado = false;
 // console.log("SOMA: "+ soma );
 
 function soma(numeroA, numeroB){
-    console.log("O Resultado é: "+ (numeroA + numeroB) );
+    return numeroA + numeroB;
 }
 
-soma();
+// function generica(){
+//    console.log(arguments);
+// };
+
+// generica("A");
+// generica("B",2,4);
+// generica("c",true,false);
+
+//gjhdgadgashjd
+window.onload = function(){
+    var botaoSOMAR = document.getElementById("somar");
+
+    botaoSOMAR.addEventListener("click",function(){
+        console.log("Olá");
+    });
+};
+
