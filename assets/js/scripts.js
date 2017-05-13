@@ -23,8 +23,8 @@ habilitado = false;
 // var soma = 2+2;
 // console.log("SOMA: "+ soma );
 
-function soma(){
-    console.log("O Resultado é: "+ (2+2) );
+function soma(numeroA, numeroB){
+    console.log("O Resultado é: "+ (numeroA + numeroB) );
 }
 
 soma();
