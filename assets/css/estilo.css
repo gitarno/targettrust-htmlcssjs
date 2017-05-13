@@ -2,7 +2,7 @@
 
 *{
     box-sizing: border-box !important;
-}
+}   
 html,
 body{
     font-family: 'Lato', sans-serif;
@@ -113,7 +113,7 @@ section .conteudo{
 }
 
 section#start{
-    background: url("turma-do-barulho.jpeg");
+    background: url("../img/turma-do-barulho.jpeg");
     background-size: cover; 
     background-position: center;
 }
