@@ -113,7 +113,7 @@ section .conteudo{
 }
 
 section#start{
-    background: url("../img/turma-do-barulho.jpeg");
+    background: url("../imgs/turma-do-barulho.jpeg");
     background-size: cover; 
     background-position: center;
 }
