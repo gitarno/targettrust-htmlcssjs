@@ -3,7 +3,6 @@
 *{
     box-sizing: border-box !important;
 }
-
 html,
 body{
     font-family: 'Lato', sans-serif;
@@ -12,7 +11,19 @@ body{
     width: 100%;
     height: 100%;
 }
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
 
+p{
+    line-height: 1.51em;
+}
 .bar{
     position: fixed;
     display: table;
@@ -116,20 +127,58 @@ section#about {
     padding-left: 20px;
     padding-right: 20px; 
 }
-
-section#about .conteudo .row .col-50_perc{
-    width: 50%;
+.row{
+    position: relative;
+    clear: both;
+}
+.row .col{
+    width: 100%;
     position: relative;
     float: left;
     padding: 15px;
 }
 
-.text-left{
-    text-align: left;
+.col-xs-12{
+    
 }
-.text-right{
-    text-align: right;
+
+[class*="col-"]{
+
 }
-p{
-    line-height: 1.51em;
+
+
+.btn{
+    padding: 15px 20px;
+    text-decoration: none;
+    background: #29c3a5;
+    border: #59d0b8 1px dotted;
+    border-radius: 3px;
+    color: white;
+    transition: background ease 0.3s;
+}
+
+.btn:hover,
+.btn:focus{
+    background: #59d0b8 ;
+}
+
+/*TABLET*/
+@media screen and (min-width:600px){
+    .row .col.tablet-6{
+        width: 50%;
+    }
+    .tablet-text-left{
+        text-align: left;
+    }
+    .tablet-text-right{
+        text-align: right;
+    }
+
+}
+
+/*DESKTOP*/
+@media screen and (min-width:1200px){
+    .col.desktop-6{
+        width: 50%;
+    }
 }
