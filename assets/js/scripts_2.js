@@ -34,17 +34,6 @@ window.onload = function(){
     console.log(objeto.nome[objeto.nome.length-1]);
     console.log(objeto.email.indexOf("@"));
 
-    for(var i =0; i<10; i++ ){
-        console.log(i);
-    }
-
-    var i = 0;
-    do{
-        console.log(i);
-        i++;
-    }while(i < 10);
-    console.log(i);
-
 
     var menu = document.getElementById("menu-principal");
         console.log("Manipulando:" + menu.id);
