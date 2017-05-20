@@ -155,6 +155,7 @@ section#sobre {
     border-radius: 3px;
     color: white;
     transition: background ease 0.3s;
+    margin-top:15px 
 }
 
 .btn:hover,
@@ -185,8 +186,8 @@ section#sobre {
 section#fale_conosco{
     background: #e0ecea;
 }
-#fale_conosco h1{
-    color: #18bc9c;
+#fale_conosco h2{
+    color: #62727e;
 }
 #fale_conosco form label, 
 #fale_conosco form input {
@@ -196,7 +197,7 @@ section#fale_conosco{
     width: 100%;
     padding: 10px;
     text-align: left;
-    color: #18bc9c;
+    color: #62727e;
 }
 
 #fale_conosco form {
@@ -206,4 +207,10 @@ section#fale_conosco{
     float: left;
     left: 50%;
     margin-left: -190px;
+}
+
+#fale_conosco form input {
+    border-radius: 3px;
+    border: 1px solid #18bc9c;
+    outline: none;
 }
