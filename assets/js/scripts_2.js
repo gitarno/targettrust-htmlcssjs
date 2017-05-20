@@ -19,6 +19,8 @@ var meuArray = [
     12311
 ];
 
+
+
 window.onload = function () {
     // console.log("Bem vindo!" + nome);
     // console.log("Atenção não digite nada nessa área, que você não saiba!")
@@ -28,24 +30,65 @@ window.onload = function () {
     // console.log(objeto.nome[objeto.nome.length - 1]);
     // console.log(objeto.email.indexOf("@"));
     var header = document.getElementById("menu-principal");
-        // console.log("Manipulando:" + header.id);
-        header.style.background = "rgba(44, 62, 80, 0.7)";
-        header.className += " active";
+    // console.log("Manipulando:" + header.id);
+    header.style.background = "rgba(44, 62, 80, 0.7)";
+    header.className += " active";
 
     var menu = {
         logotipo: header.children[0],
         itens: header.children[1].children[0].children
     };
 
-    console.log(menu.itens[0].children[0]);
+    var nome = document.fale_conosco.nome,
+        email = document.fale_conosco.email,
+        telefone = document.fale_conosco.telefone;
 
-    menu.itens[0].children[0].addEventListener("click",function(event){
-        event.preventDefault();
-        console.log(event);
-        window.location.href = menu.itens[0].children[0].href;
+    document.body.addEventListener("keydown", function (event) {
+        // event.preventDefault();
+        // console.log(event);
+        switch (event.key) {
+            case "b":
+            case "a":
+                console.log("Você apertou a tecla A ou B");
+                break;
+            default:
+                console.log("Você digitou não sei o que...");
+                break;
+        }
     });
 
 
-    menu.logotipo.innerHTML = "Olá, " + objeto.nome;
+    document.fale_conosco.enviar.addEventListener("click", function () {
+        //VAlidar Nome
+        var validator = {
+            nome: validarCampos(nome),
+            email: validarCampos(email),
+            telefone: validarCampos(telefone)
+        }
 
+        if (validator.nome && validator.email && validator.telefone) {
+            console.log("Formulario enviado com sucesso!");
+            document.fale_conosco.submit();
+        } else {
+            console.log("Prencha todos os campos!")
+        }
+
+    });
+
+
+
+}
+
+function validarCampos($campo) {
+    if ($campo.value != "") {
+        if($campo.type == "email" && $campo.value.indexOf("@") < 0){
+            return false
+        }
+        $campo.removeAttribute("style");
+        return true;
+
+    } else {
+        $campo.style.border = "1px solid red";
+        return false;
+    }
 }
